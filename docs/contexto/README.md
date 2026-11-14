@@ -12,9 +12,10 @@ Permitir que uma fonte seja relacionada a um acontecimento, projeto ou equipe se
 erDiagram
   PROJETO ||--o{ PARTICIPACAO : possui
   PESSOA ||--o{ PARTICIPACAO : integra
+  EQUIPE |o--o{ PARTICIPACAO : organiza
   PROJETO ||--o{ VINCULO_REUNIAO : contextualiza
   REUNIAO ||--o{ VINCULO_REUNIAO : pertence
-  EVENTO_AGENDA ||--o{ REUNIAO : origina
+  EVENTO_AGENDA |o--o{ REUNIAO : origina
   REUNIAO ||--o{ ARTEFATO : documentada_por
   PROJETO ||--o{ VINCULO_FONTE : relacionado
   FONTE ||--o{ VINCULO_FONTE : contextualizada
@@ -25,7 +26,8 @@ O desenho é lógico, não esquema físico definitivo. Uma reunião pode ter mai
 | Entidade | Informação candidata |
 | --- | --- |
 | Projeto | ID estável, nome, descrição, situação, período, referências |
-| Pessoa/equipe | Identidade, papel, projeto, vigência da participação |
+| Equipe | Identidade, finalidade, referências aos cadastros existentes |
+| Pessoa e participação | Identidade, papel, projeto, equipe quando aplicável, vigência da participação |
 | Evento de agenda | ID na origem, título, início/fim, organizador, convidados, recorrência, situação |
 | Ocorrência de reunião | ID, evento relacionado quando conhecido, realização confirmada ou não, data efetiva, participantes conhecidos |
 | Artefato de reunião | Tipo (transcrição, ata, gravação, anexo), origem, versão, vínculo, disponibilidade |
