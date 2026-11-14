@@ -21,3 +21,15 @@ A infraestrutura será concebida para funcionar independentemente das aplicaçõ
 O ASPONE ainda está em fase de concepção. A arquitetura e as tecnologias serão definidas progressivamente, por meio de pesquisas, experimentos e avaliação de soluções existentes, priorizando simplicidade, modularidade, rastreabilidade e confiabilidade.
 
 **O objetivo é transformar informações dispersas em conhecimento organizado, contextualizado, recuperável e reutilizável.**
+
+## Documentação e navegação
+
+A documentação é mantida no próprio repositório, como Wiki versionada. O README acima preserva a concepção original.
+
+- [Mapa da documentação](docs/README.md)
+- [Finalidade, benefícios e aplicações](docs/negocio.md)
+- [Arquitetura e responsabilidades](docs/arquitetura.md)
+- [Primeira integração: WhatsApp](docs/integracoes/watchtower-whatsapp.md)
+- [Código do coletor experimental](modules/whatsapp/README.md)
+
+**Estado:** primeira integração validada em laboratório; as demais fontes e aplicações consumidoras ainda não constituem uma plataforma integrada. A documentação de implantação específica, credenciais e dados reais não fazem parte deste repositório público.
