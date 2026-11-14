@@ -13,6 +13,10 @@ Esta árvore é a fonte versionada de documentação de produto, arquitetura e e
 | [Continuidade e backup](integracoes/whatsapp/operacao.md) | Como verificar, recuperar e manter o fluxo? |
 | [Código](../modules/whatsapp/README.md) | Quais scripts existem, quais estão versionados? |
 | [Evolução](evolucao.md) | O que falta e como saber se está pronto? |
+| [To-do list](backlog.md) | Quais entregas e descobertas precisamos acompanhar? |
+| [Alimentação multifuente](alimentacao/README.md) | Como incorporar atas, transcrições, e-mails e documentos? |
+| [Contexto compartilhado](contexto/README.md) | Como relacionar projetos, equipes, agenda e reuniões? |
+| [Consolidação e correção](conhecimento/README.md) | Como manter conhecimento vigente, revisável e rastreável? |
 
 ## Regras de manutenção
 

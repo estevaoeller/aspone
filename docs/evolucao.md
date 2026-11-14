@@ -13,7 +13,12 @@ O ASPONE ainda está em desenvolvimento. Cada incremento deve ser documentado co
 | Outras fontes | Conceitual | Experimentos e contratos próprios |
 | Memória de conhecimento | Conceitual | Relação entre fontes, afirmações, correções e revisão humana |
 
+## Backlog vivo
+
+A lista detalhada de entregas, descobertas e dependências está no [To-do list](backlog.md). Este documento permanece como visão resumida de maturidade, não como lista concorrente de tarefas.
+
 ## Relações
 
 - [Wiki](README.md)
+- [Backlog](backlog.md)
 - [Arquitetura](arquitetura.md)

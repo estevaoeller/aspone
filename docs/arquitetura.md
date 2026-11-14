@@ -47,8 +47,29 @@ Uma conversa e um projeto são entidades distintas. A associação semântica po
 
 A separação entre fonte, projeção e interpretação é uma regra de arquitetura. A escolha de WAHA, PostgreSQL, Markdown e rclone descreve a primeira implementação, não uma obrigação para todas as futuras fontes. O contrato de identidade estável entre as projeções e os consumidores ainda requer definição.
 
+## Ampliação conceitual: contexto e consolidação
+
+```mermaid
+flowchart TD
+  F[WhatsApp, e-mails, atas, transcrições, documentos] --> A[(Acervo documental)]
+  C[Cadastro de projetos, equipes e calendário] --> L[Relacionamento e contexto]
+  A --> L
+  L --> K[Consolidação e extração]
+  K --> V[Correções e validação humana]
+  V --> M[(Memória de conhecimento)]
+  A --> S[Distribuição autorizada SharePoint]
+  M --> S
+  S --> U[Aplicações consumidoras]
+```
+
+Este segundo diagrama descreve a visão pretendida, não estado implantado. Os cadastros compartilhados relacionam fontes a eventos e projetos; não concedem permissões nem determinam automaticamente a validade de uma afirmação. A memória de conhecimento distingue evidência, interpretação, decisão e vigência. SharePoint poderá distribuir projeções autorizadas de ambas as capacidades; a forma de armazenamento da memória ainda será definida.
+
 ## Relações
 
 - [Negócio](negocio.md)
 - [Integração WhatsApp](integracoes/watchtower-whatsapp.md)
 - [Evolução](evolucao.md)
+- [To-do list](backlog.md)
+- [Alimentação multifuente](alimentacao/README.md)
+- [Contexto compartilhado](contexto/README.md)
+- [Consolidação e correção](conhecimento/README.md)
