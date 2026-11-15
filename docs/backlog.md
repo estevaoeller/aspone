@@ -1,6 +1,6 @@
 # To-do list do ASPONE
 
-**Atualizado:** 14/11/2026. **Natureza:** backlog vivo de produto e engenharia. Não representa estado operacional. A ordem dos grupos abaixo é uma organização proposta, não compromisso de prazo ou implementação.
+**Atualizado:** 15/11/2026. **Natureza:** backlog vivo de produto e engenharia. Não representa estado operacional. A ordem dos grupos abaixo é uma organização proposta, não compromisso de prazo ou implementação.
 
 ## Como manter
 
@@ -47,6 +47,32 @@ Cada item possui ID estável, entregável e critério de conclusão. Marcar como
 - [ ] **ENG-03 — Backup e recuperação:** definir destino autorizado, política, retenção, periodicidade e restauração testada; dumps pontuais não bastam.
 - [ ] **ENG-04 — Observabilidade e qualidade:** medir coleta, lacunas, mutações não reconciliadas, duplicidade, integridade, atualização e disponibilidade.
 - [ ] **ENG-05 — Governança:** mapear acesso por fonte e finalidade, proteção de dados, retenção, retirada, revisão de permissões e responsabilidade pela publicação.
+
+## F. Evolução da integração WhatsApp (ASPONE / Watchtower)
+
+Detalhamento das frentes WH, vinculado aos itens gerais de alimentação, distribuição e engenharia. As prioridades abaixo indicam sequência de discussão, não implantação.
+
+### P0 — Histórico e continuidade
+
+- [ ] **WH-01 — Recepção de ZIP/TXT:** identificar a exportação enviada à conversa consigo mesmo; baixar apenas documentos explicitamente selecionados, preservar arquivo original e hash, extrair TXT de ZIP com limites de tamanho e proteção contra caminhos externos. Não exigir descompactação manual no celular. Critério: uma exportação real recebida e validada sem captura indiscriminada de mídia.
+- [ ] **WH-02 — Histórico oficial (ALI-02):** importar exportações sem mídia, associar a conversa ao cadastro, reconciliar sobreposição com WAHA, preservar proveniência e tratar ambiguidades, edições e revogações. Processar por grupo e mês em pequenos lotes, sem reconfigurar a sessão corrente. Critério: importação repetível, sem duplicidades, com publicação somente de histórico autorizado.
+- [ ] **WH-03 — Sincronização horária (ENG-02):** atualização incremental do SharePoint, inclusive dias históricos corrigidos; lock, logs, alertas e verificação de transferência, sem exclusão automática. Critério: execução periódica comprovada e rollback documentado.
+
+### P1 — Arquivos e proteção de dados
+
+- [ ] **WH-04 — Download seletivo:** política por origem, autorização e tipo (documento, áudio, imagem, exportação), com limites, falhas e retenção do cache.
+- [ ] **WH-05 — Armazenamento:** distinguir entrada temporária, processamento, originais, derivados e quarentena; separar acervo pessoal e profissional, identidade de origem, permissões, checksum e retenção. Definir destino persistente antes da migração.
+- [ ] **WH-06 — Backup (ENG-03):** avaliar replicação com rclone e backup versionado, destinos autorizados e separados por classificação, criptografia, verificação e restauração testada. A projeção no SharePoint não substitui backup integral.
+- [ ] **WH-07 — Documentos:** definir extração de texto, OCR, metadados, indexação, associação a fontes e projetos, fila idempotente e reprocessamento.
+
+### P2 — Áudio e processamento distribuído
+
+- [ ] **WH-08 — Áudio:** captura seletiva, preservação do original, transcrição com timestamps e proveniência, revisão, vínculo à mensagem e publicação autorizada.
+- [ ] **WH-09 — Workers de transcrição:** priorizar GPU local, avaliar ambiente alternativo como fallback e distribuir tarefas distintas entre workers simultaneamente disponíveis. Definir modelos, capacidade, custo, privacidade, retry e idempotência.
+- [ ] **WH-10 — Worker externo:** avaliar pacote/script executado em computador autorizado, com intercâmbio de tarefas e resultados via SharePoint, sem exigir acesso à rede privada. Validar política de TI, permissões, autenticação, isolamento e auditoria antes da implantação.
+- [ ] **WH-11 — Orquestração:** estudar fila, leases, roteamento por disponibilidade e capacidade, recuperação de falhas e prevenção de duplicidades; reutilizar a capacidade para OCR, embeddings e extração de documentos.
+
+Nenhum arquivo de conversa, catálogo privado, nome de grupo, credencial ou configuração de ambiente integra este backlog público.
 
 ## Sequência sugerida de descoberta
 
