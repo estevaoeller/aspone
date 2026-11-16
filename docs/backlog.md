@@ -74,6 +74,15 @@ Detalhamento das frentes WH, vinculado aos itens gerais de alimentação, distri
 
 Nenhum arquivo de conversa, catálogo privado, nome de grupo, credencial ou configuração de ambiente integra este backlog público.
 
+## G. Console de configuração e operação do Watchtower / ASPONE
+
+- [ ] **UI-01 — Exploração e arquitetura:** mapear componentes existentes, fontes de verdade, permissões, fronteira administrativa e opções de implementação; propor wireframes e plano antes de alterar o runtime.
+- [ ] **UI-02 — Console somente leitura:** visão geral, grupos descobertos/selecionados/publicados, estado da coleta, horário efetivo, última/próxima publicação e histórico de execuções.
+- [ ] **UI-03 — Configuração e operação:** editar seleção, escopo autorizado e horário com validação, backup, lock e auditoria; simular/publicar manualmente pelo publicador existente, acompanhar jobs e falhas sanitizadas; não criar segundo coletor ou agendador.
+- [ ] **UI-04 — Histórico e arquivos:** acompanhar exportações autorizadas, importação integral por grupo, retenções e reconciliação; evoluir para políticas de arquivos e workers somente após o MVP.
+
+A interface administrativa deve permanecer privada, sem credenciais, comandos arbitrários ou dados reais no repositório. Não substituir a configuração efetiva nem interromper a coleta. Integrações com histórico e publicação preservam autorização explícita.
+
 ## Sequência sugerida de descoberta
 
 1. Continuar estabilizando WhatsApp e distribuição; não interromper a alimentação já demonstrada.
