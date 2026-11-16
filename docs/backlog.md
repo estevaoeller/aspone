@@ -77,6 +77,7 @@ Nenhum arquivo de conversa, catálogo privado, nome de grupo, credencial ou conf
 ## G. Console de configuração e operação do Watchtower / ASPONE
 
 - [ ] **UI-01 — Exploração e arquitetura:** mapear componentes existentes, fontes de verdade, permissões, fronteira administrativa e opções de implementação; propor wireframes e plano antes de alterar o runtime.
+  - Pesquisa delegada ao agente Claude Code: avaliar reutilização de templates administrativos e bibliotecas maduras, sem desenvolver componentes visuais do zero. Lista inicial, não exaustiva: Streamlit, Dash, NiceGUI, Tabler, shadcn/ui, ECharts, Plotly, Chart.js e Recharts. Investigar também outras alternativas e registros existentes na Wiki; comparar licença, integração com Python, componentes, manutenção, consumo de recursos e esforço. Nenhuma escolha tecnológica aprovada; concluir pesquisa antes de implementar.
 - [ ] **UI-02 — Console somente leitura:** visão geral, grupos descobertos/selecionados/publicados, estado da coleta, horário efetivo, última/próxima publicação e histórico de execuções.
 - [ ] **UI-03 — Configuração e operação:** editar seleção, escopo autorizado e horário com validação, backup, lock e auditoria; simular/publicar manualmente pelo publicador existente, acompanhar jobs e falhas sanitizadas; não criar segundo coletor ou agendador.
 - [ ] **UI-04 — Histórico e arquivos:** acompanhar exportações autorizadas, importação integral por grupo, retenções e reconciliação; evoluir para políticas de arquivos e workers somente após o MVP.
