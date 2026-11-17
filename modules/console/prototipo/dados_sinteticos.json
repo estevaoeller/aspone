@@ -1,0 +1,2173 @@
+{
+ "sintetico": true,
+ "gerado_em": "2026-11-17T09:40-03:00",
+ "fuso": "America/Sao_Paulo",
+ "saude": [
+  {
+   "componente": "WAHA",
+   "estado": "ok",
+   "verificado_em": "2026-11-17T09:38-03:00",
+   "detalhe": "Sessão conectada"
+  },
+  {
+   "componente": "Coletor",
+   "estado": "ok",
+   "verificado_em": "2026-11-17T09:38-03:00",
+   "detalhe": "Último webhook há 4 min"
+  },
+  {
+   "componente": "PostgreSQL",
+   "estado": "ok",
+   "verificado_em": "2026-11-17T09:38-03:00",
+   "detalhe": "Aceitando conexões"
+  },
+  {
+   "componente": "Publicador",
+   "estado": "desconhecido",
+   "verificado_em": "2026-11-17T03:02-03:00",
+   "detalhe": "Sem verificação desde a última execução"
+  }
+ ],
+ "grupos": {
+  "descobertos": 23,
+  "selecionados": 6,
+  "habilitados": 4
+ },
+ "acervo": {
+  "mensagens": 2810,
+  "md_locais": 196,
+  "md_publicados": 135,
+  "historico_recuperado": 926,
+  "retidos": 41
+ },
+ "publicacao": {
+  "agendamento": "Diária às 03:00 (America/Sao_Paulo)",
+  "ultima_verificada": "2026-11-17T03:01-03:00",
+  "proxima_execucao": "2026-11-18T03:00-03:00",
+  "mutacoes_pendentes": 3,
+  "ultimo_evento": "2026-11-17T09:36-03:00"
+ },
+ "fontes": {
+  "webhook": "Ao vivo (webhook)",
+  "historico_gows": "Histórico GOWS",
+  "exportacao_txt": "Exportação TXT"
+ },
+ "mensagens_por_dia": [
+  {
+   "dia": "2026-10-04",
+   "webhook": 0,
+   "historico_gows": 20,
+   "exportacao_txt": 2
+  },
+  {
+   "dia": "2026-10-05",
+   "webhook": 0,
+   "historico_gows": 70,
+   "exportacao_txt": 23
+  },
+  {
+   "dia": "2026-10-06",
+   "webhook": 0,
+   "historico_gows": 43,
+   "exportacao_txt": 25
+  },
+  {
+   "dia": "2026-10-07",
+   "webhook": 0,
+   "historico_gows": 32,
+   "exportacao_txt": 27
+  },
+  {
+   "dia": "2026-10-08",
+   "webhook": 0,
+   "historico_gows": 67,
+   "exportacao_txt": 18
+  },
+  {
+   "dia": "2026-10-09",
+   "webhook": 0,
+   "historico_gows": 57,
+   "exportacao_txt": 18
+  },
+  {
+   "dia": "2026-10-10",
+   "webhook": 0,
+   "historico_gows": 17,
+   "exportacao_txt": 7
+  },
+  {
+   "dia": "2026-10-11",
+   "webhook": 0,
+   "historico_gows": 24,
+   "exportacao_txt": 6
+  },
+  {
+   "dia": "2026-10-12",
+   "webhook": 0,
+   "historico_gows": 30,
+   "exportacao_txt": 18
+  },
+  {
+   "dia": "2026-10-13",
+   "webhook": 0,
+   "historico_gows": 75,
+   "exportacao_txt": 16
+  },
+  {
+   "dia": "2026-10-14",
+   "webhook": 0,
+   "historico_gows": 75,
+   "exportacao_txt": 34
+  },
+  {
+   "dia": "2026-10-15",
+   "webhook": 0,
+   "historico_gows": 70,
+   "exportacao_txt": 25
+  },
+  {
+   "dia": "2026-10-16",
+   "webhook": 0,
+   "historico_gows": 47,
+   "exportacao_txt": 25
+  },
+  {
+   "dia": "2026-10-17",
+   "webhook": 0,
+   "historico_gows": 22,
+   "exportacao_txt": 6
+  },
+  {
+   "dia": "2026-10-18",
+   "webhook": 0,
+   "historico_gows": 15,
+   "exportacao_txt": 3
+  },
+  {
+   "dia": "2026-10-19",
+   "webhook": 90,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-10-20",
+   "webhook": 57,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-10-21",
+   "webhook": 83,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-10-22",
+   "webhook": 108,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-10-23",
+   "webhook": 40,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-10-24",
+   "webhook": 31,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-10-25",
+   "webhook": 28,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-10-26",
+   "webhook": 81,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-10-27",
+   "webhook": 84,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-10-28",
+   "webhook": 105,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-10-29",
+   "webhook": 73,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-10-30",
+   "webhook": 88,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-10-31",
+   "webhook": 17,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-11-01",
+   "webhook": 33,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-11-02",
+   "webhook": 30,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-11-03",
+   "webhook": 92,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-11-04",
+   "webhook": 57,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-11-05",
+   "webhook": 74,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-11-06",
+   "webhook": 87,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-11-07",
+   "webhook": 22,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-11-08",
+   "webhook": 0,
+   "historico_gows": 9,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-11-09",
+   "webhook": 53,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-11-10",
+   "webhook": 67,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-11-11",
+   "webhook": 92,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-11-12",
+   "webhook": 86,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-11-13",
+   "webhook": 111,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-11-14",
+   "webhook": 25,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-11-15",
+   "webhook": 22,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-11-16",
+   "webhook": 95,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  },
+  {
+   "dia": "2026-11-17",
+   "webhook": 53,
+   "historico_gows": 0,
+   "exportacao_txt": 0
+  }
+ ],
+ "mutacoes_por_dia": [
+  {
+   "dia": "2026-10-04",
+   "edicoes": 1,
+   "revogacoes": 1
+  },
+  {
+   "dia": "2026-10-05",
+   "edicoes": 1,
+   "revogacoes": 1
+  },
+  {
+   "dia": "2026-10-06",
+   "edicoes": 2,
+   "revogacoes": 1
+  },
+  {
+   "dia": "2026-10-07",
+   "edicoes": 1,
+   "revogacoes": 0
+  },
+  {
+   "dia": "2026-10-08",
+   "edicoes": 1,
+   "revogacoes": 1
+  },
+  {
+   "dia": "2026-10-09",
+   "edicoes": 0,
+   "revogacoes": 0
+  },
+  {
+   "dia": "2026-10-10",
+   "edicoes": 1,
+   "revogacoes": 0
+  },
+  {
+   "dia": "2026-10-11",
+   "edicoes": 0,
+   "revogacoes": 1
+  },
+  {
+   "dia": "2026-10-12",
+   "edicoes": 1,
+   "revogacoes": 0
+  },
+  {
+   "dia": "2026-10-13",
+   "edicoes": 2,
+   "revogacoes": 0
+  },
+  {
+   "dia": "2026-10-14",
+   "edicoes": 1,
+   "revogacoes": 0
+  },
+  {
+   "dia": "2026-10-15",
+   "edicoes": 3,
+   "revogacoes": 1
+  },
+  {
+   "dia": "2026-10-16",
+   "edicoes": 0,
+   "revogacoes": 0
+  },
+  {
+   "dia": "2026-10-17",
+   "edicoes": 0,
+   "revogacoes": 0
+  },
+  {
+   "dia": "2026-10-18",
+   "edicoes": 1,
+   "revogacoes": 1
+  },
+  {
+   "dia": "2026-10-19",
+   "edicoes": 1,
+   "revogacoes": 0
+  },
+  {
+   "dia": "2026-10-20",
+   "edicoes": 2,
+   "revogacoes": 0
+  },
+  {
+   "dia": "2026-10-21",
+   "edicoes": 2,
+   "revogacoes": 1
+  },
+  {
+   "dia": "2026-10-22",
+   "edicoes": 1,
+   "revogacoes": 1
+  },
+  {
+   "dia": "2026-10-23",
+   "edicoes": 1,
+   "revogacoes": 0
+  },
+  {
+   "dia": "2026-10-24",
+   "edicoes": 0,
+   "revogacoes": 1
+  },
+  {
+   "dia": "2026-10-25",
+   "edicoes": 0,
+   "revogacoes": 1
+  },
+  {
+   "dia": "2026-10-26",
+   "edicoes": 2,
+   "revogacoes": 1
+  },
+  {
+   "dia": "2026-10-27",
+   "edicoes": 3,
+   "revogacoes": 0
+  },
+  {
+   "dia": "2026-10-28",
+   "edicoes": 3,
+   "revogacoes": 1
+  },
+  {
+   "dia": "2026-10-29",
+   "edicoes": 2,
+   "revogacoes": 1
+  },
+  {
+   "dia": "2026-10-30",
+   "edicoes": 2,
+   "revogacoes": 1
+  },
+  {
+   "dia": "2026-10-31",
+   "edicoes": 0,
+   "revogacoes": 1
+  },
+  {
+   "dia": "2026-11-01",
+   "edicoes": 1,
+   "revogacoes": 0
+  },
+  {
+   "dia": "2026-11-02",
+   "edicoes": 0,
+   "revogacoes": 1
+  },
+  {
+   "dia": "2026-11-03",
+   "edicoes": 2,
+   "revogacoes": 1
+  },
+  {
+   "dia": "2026-11-04",
+   "edicoes": 0,
+   "revogacoes": 1
+  },
+  {
+   "dia": "2026-11-05",
+   "edicoes": 2,
+   "revogacoes": 0
+  },
+  {
+   "dia": "2026-11-06",
+   "edicoes": 3,
+   "revogacoes": 0
+  },
+  {
+   "dia": "2026-11-07",
+   "edicoes": 1,
+   "revogacoes": 0
+  },
+  {
+   "dia": "2026-11-08",
+   "edicoes": 1,
+   "revogacoes": 1
+  },
+  {
+   "dia": "2026-11-09",
+   "edicoes": 0,
+   "revogacoes": 1
+  },
+  {
+   "dia": "2026-11-10",
+   "edicoes": 2,
+   "revogacoes": 1
+  },
+  {
+   "dia": "2026-11-11",
+   "edicoes": 3,
+   "revogacoes": 0
+  },
+  {
+   "dia": "2026-11-12",
+   "edicoes": 2,
+   "revogacoes": 1
+  },
+  {
+   "dia": "2026-11-13",
+   "edicoes": 0,
+   "revogacoes": 0
+  },
+  {
+   "dia": "2026-11-14",
+   "edicoes": 1,
+   "revogacoes": 1
+  },
+  {
+   "dia": "2026-11-15",
+   "edicoes": 1,
+   "revogacoes": 0
+  },
+  {
+   "dia": "2026-11-16",
+   "edicoes": 3,
+   "revogacoes": 0
+  },
+  {
+   "dia": "2026-11-17",
+   "edicoes": 1,
+   "revogacoes": 0
+  }
+ ],
+ "cobertura": {
+  "grupos": [
+   "Grupo A",
+   "Grupo B",
+   "Grupo C",
+   "Grupo D",
+   "Grupo E",
+   "Grupo F"
+  ],
+  "dias": [
+   "2026-10-04",
+   "2026-10-05",
+   "2026-10-06",
+   "2026-10-07",
+   "2026-10-08",
+   "2026-10-09",
+   "2026-10-10",
+   "2026-10-11",
+   "2026-10-12",
+   "2026-10-13",
+   "2026-10-14",
+   "2026-10-15",
+   "2026-10-16",
+   "2026-10-17",
+   "2026-10-18",
+   "2026-10-19",
+   "2026-10-20",
+   "2026-10-21",
+   "2026-10-22",
+   "2026-10-23",
+   "2026-10-24",
+   "2026-10-25",
+   "2026-10-26",
+   "2026-10-27",
+   "2026-10-28",
+   "2026-10-29",
+   "2026-10-30",
+   "2026-10-31",
+   "2026-11-01",
+   "2026-11-02",
+   "2026-11-03",
+   "2026-11-04",
+   "2026-11-05",
+   "2026-11-06",
+   "2026-11-07",
+   "2026-11-08",
+   "2026-11-09",
+   "2026-11-10",
+   "2026-11-11",
+   "2026-11-12",
+   "2026-11-13",
+   "2026-11-14",
+   "2026-11-15",
+   "2026-11-16",
+   "2026-11-17"
+  ],
+  "valores": [
+   [
+    0,
+    0,
+    16
+   ],
+   [
+    1,
+    0,
+    1
+   ],
+   [
+    2,
+    0,
+    3
+   ],
+   [
+    3,
+    0,
+    0
+   ],
+   [
+    4,
+    0,
+    0
+   ],
+   [
+    5,
+    0,
+    2
+   ],
+   [
+    0,
+    1,
+    44
+   ],
+   [
+    1,
+    1,
+    11
+   ],
+   [
+    2,
+    1,
+    15
+   ],
+   [
+    3,
+    1,
+    0
+   ],
+   [
+    4,
+    1,
+    4
+   ],
+   [
+    5,
+    1,
+    19
+   ],
+   [
+    0,
+    2,
+    26
+   ],
+   [
+    1,
+    2,
+    17
+   ],
+   [
+    2,
+    2,
+    0
+   ],
+   [
+    3,
+    2,
+    4
+   ],
+   [
+    4,
+    2,
+    0
+   ],
+   [
+    5,
+    2,
+    21
+   ],
+   [
+    0,
+    3,
+    0
+   ],
+   [
+    1,
+    3,
+    32
+   ],
+   [
+    2,
+    3,
+    0
+   ],
+   [
+    3,
+    3,
+    2
+   ],
+   [
+    4,
+    3,
+    0
+   ],
+   [
+    5,
+    3,
+    25
+   ],
+   [
+    0,
+    4,
+    40
+   ],
+   [
+    1,
+    4,
+    27
+   ],
+   [
+    2,
+    4,
+    0
+   ],
+   [
+    3,
+    4,
+    0
+   ],
+   [
+    4,
+    4,
+    0
+   ],
+   [
+    5,
+    4,
+    18
+   ],
+   [
+    0,
+    5,
+    23
+   ],
+   [
+    1,
+    5,
+    19
+   ],
+   [
+    2,
+    5,
+    15
+   ],
+   [
+    3,
+    5,
+    5
+   ],
+   [
+    4,
+    5,
+    3
+   ],
+   [
+    5,
+    5,
+    10
+   ],
+   [
+    0,
+    6,
+    13
+   ],
+   [
+    1,
+    6,
+    0
+   ],
+   [
+    2,
+    6,
+    4
+   ],
+   [
+    3,
+    6,
+    1
+   ],
+   [
+    4,
+    6,
+    0
+   ],
+   [
+    5,
+    6,
+    6
+   ],
+   [
+    0,
+    7,
+    12
+   ],
+   [
+    1,
+    7,
+    8
+   ],
+   [
+    2,
+    7,
+    4
+   ],
+   [
+    3,
+    7,
+    1
+   ],
+   [
+    4,
+    7,
+    1
+   ],
+   [
+    5,
+    7,
+    4
+   ],
+   [
+    0,
+    8,
+    30
+   ],
+   [
+    1,
+    8,
+    0
+   ],
+   [
+    2,
+    8,
+    0
+   ],
+   [
+    3,
+    8,
+    4
+   ],
+   [
+    4,
+    8,
+    0
+   ],
+   [
+    5,
+    8,
+    14
+   ],
+   [
+    0,
+    9,
+    45
+   ],
+   [
+    1,
+    9,
+    15
+   ],
+   [
+    2,
+    9,
+    15
+   ],
+   [
+    3,
+    9,
+    0
+   ],
+   [
+    4,
+    9,
+    3
+   ],
+   [
+    5,
+    9,
+    13
+   ],
+   [
+    0,
+    10,
+    45
+   ],
+   [
+    1,
+    10,
+    19
+   ],
+   [
+    2,
+    10,
+    11
+   ],
+   [
+    3,
+    10,
+    8
+   ],
+   [
+    4,
+    10,
+    0
+   ],
+   [
+    5,
+    10,
+    26
+   ],
+   [
+    0,
+    11,
+    27
+   ],
+   [
+    1,
+    11,
+    30
+   ],
+   [
+    2,
+    11,
+    13
+   ],
+   [
+    3,
+    11,
+    8
+   ],
+   [
+    4,
+    11,
+    1
+   ],
+   [
+    5,
+    11,
+    16
+   ],
+   [
+    0,
+    12,
+    0
+   ],
+   [
+    1,
+    12,
+    36
+   ],
+   [
+    2,
+    12,
+    11
+   ],
+   [
+    3,
+    12,
+    6
+   ],
+   [
+    4,
+    12,
+    0
+   ],
+   [
+    5,
+    12,
+    19
+   ],
+   [
+    0,
+    13,
+    17
+   ],
+   [
+    1,
+    13,
+    5
+   ],
+   [
+    2,
+    13,
+    0
+   ],
+   [
+    3,
+    13,
+    2
+   ],
+   [
+    4,
+    13,
+    0
+   ],
+   [
+    5,
+    13,
+    4
+   ],
+   [
+    0,
+    14,
+    13
+   ],
+   [
+    1,
+    14,
+    0
+   ],
+   [
+    2,
+    14,
+    2
+   ],
+   [
+    3,
+    14,
+    0
+   ],
+   [
+    4,
+    14,
+    0
+   ],
+   [
+    5,
+    14,
+    3
+   ],
+   [
+    0,
+    15,
+    51
+   ],
+   [
+    1,
+    15,
+    25
+   ],
+   [
+    2,
+    15,
+    11
+   ],
+   [
+    3,
+    15,
+    3
+   ],
+   [
+    4,
+    15,
+    0
+   ],
+   [
+    5,
+    15,
+    0
+   ],
+   [
+    0,
+    16,
+    19
+   ],
+   [
+    1,
+    16,
+    16
+   ],
+   [
+    2,
+    16,
+    0
+   ],
+   [
+    3,
+    16,
+    0
+   ],
+   [
+    4,
+    16,
+    3
+   ],
+   [
+    5,
+    16,
+    19
+   ],
+   [
+    0,
+    17,
+    49
+   ],
+   [
+    1,
+    17,
+    0
+   ],
+   [
+    2,
+    17,
+    17
+   ],
+   [
+    3,
+    17,
+    3
+   ],
+   [
+    4,
+    17,
+    2
+   ],
+   [
+    5,
+    17,
+    12
+   ],
+   [
+    0,
+    18,
+    62
+   ],
+   [
+    1,
+    18,
+    8
+   ],
+   [
+    2,
+    18,
+    15
+   ],
+   [
+    3,
+    18,
+    8
+   ],
+   [
+    4,
+    18,
+    0
+   ],
+   [
+    5,
+    18,
+    15
+   ],
+   [
+    0,
+    19,
+    15
+   ],
+   [
+    1,
+    19,
+    14
+   ],
+   [
+    2,
+    19,
+    11
+   ],
+   [
+    3,
+    19,
+    0
+   ],
+   [
+    4,
+    19,
+    0
+   ],
+   [
+    5,
+    19,
+    0
+   ],
+   [
+    0,
+    20,
+    14
+   ],
+   [
+    1,
+    20,
+    6
+   ],
+   [
+    2,
+    20,
+    2
+   ],
+   [
+    3,
+    20,
+    3
+   ],
+   [
+    4,
+    20,
+    0
+   ],
+   [
+    5,
+    20,
+    6
+   ],
+   [
+    0,
+    21,
+    10
+   ],
+   [
+    1,
+    21,
+    10
+   ],
+   [
+    2,
+    21,
+    2
+   ],
+   [
+    3,
+    21,
+    2
+   ],
+   [
+    4,
+    21,
+    1
+   ],
+   [
+    5,
+    21,
+    3
+   ],
+   [
+    0,
+    22,
+    42
+   ],
+   [
+    1,
+    22,
+    23
+   ],
+   [
+    2,
+    22,
+    0
+   ],
+   [
+    3,
+    22,
+    7
+   ],
+   [
+    4,
+    22,
+    0
+   ],
+   [
+    5,
+    22,
+    9
+   ],
+   [
+    0,
+    23,
+    38
+   ],
+   [
+    1,
+    23,
+    26
+   ],
+   [
+    2,
+    23,
+    0
+   ],
+   [
+    3,
+    23,
+    7
+   ],
+   [
+    4,
+    23,
+    2
+   ],
+   [
+    5,
+    23,
+    11
+   ],
+   [
+    0,
+    24,
+    44
+   ],
+   [
+    1,
+    24,
+    33
+   ],
+   [
+    2,
+    24,
+    7
+   ],
+   [
+    3,
+    24,
+    6
+   ],
+   [
+    4,
+    24,
+    0
+   ],
+   [
+    5,
+    24,
+    15
+   ],
+   [
+    0,
+    25,
+    28
+   ],
+   [
+    1,
+    25,
+    19
+   ],
+   [
+    2,
+    25,
+    9
+   ],
+   [
+    3,
+    25,
+    7
+   ],
+   [
+    4,
+    25,
+    0
+   ],
+   [
+    5,
+    25,
+    10
+   ],
+   [
+    0,
+    26,
+    53
+   ],
+   [
+    1,
+    26,
+    21
+   ],
+   [
+    2,
+    26,
+    0
+   ],
+   [
+    3,
+    26,
+    0
+   ],
+   [
+    4,
+    26,
+    0
+   ],
+   [
+    5,
+    26,
+    14
+   ],
+   [
+    0,
+    27,
+    14
+   ],
+   [
+    1,
+    27,
+    2
+   ],
+   [
+    2,
+    27,
+    0
+   ],
+   [
+    3,
+    27,
+    1
+   ],
+   [
+    4,
+    27,
+    0
+   ],
+   [
+    5,
+    27,
+    0
+   ],
+   [
+    0,
+    28,
+    18
+   ],
+   [
+    1,
+    28,
+    5
+   ],
+   [
+    2,
+    28,
+    4
+   ],
+   [
+    3,
+    28,
+    0
+   ],
+   [
+    4,
+    28,
+    0
+   ],
+   [
+    5,
+    28,
+    6
+   ],
+   [
+    0,
+    29,
+    0
+   ],
+   [
+    1,
+    29,
+    0
+   ],
+   [
+    2,
+    29,
+    0
+   ],
+   [
+    3,
+    29,
+    7
+   ],
+   [
+    4,
+    29,
+    3
+   ],
+   [
+    5,
+    29,
+    20
+   ],
+   [
+    0,
+    30,
+    41
+   ],
+   [
+    1,
+    30,
+    22
+   ],
+   [
+    2,
+    30,
+    10
+   ],
+   [
+    3,
+    30,
+    0
+   ],
+   [
+    4,
+    30,
+    3
+   ],
+   [
+    5,
+    30,
+    16
+   ],
+   [
+    0,
+    31,
+    36
+   ],
+   [
+    1,
+    31,
+    0
+   ],
+   [
+    2,
+    31,
+    0
+   ],
+   [
+    3,
+    31,
+    6
+   ],
+   [
+    4,
+    31,
+    2
+   ],
+   [
+    5,
+    31,
+    13
+   ],
+   [
+    0,
+    32,
+    31
+   ],
+   [
+    1,
+    32,
+    16
+   ],
+   [
+    2,
+    32,
+    6
+   ],
+   [
+    3,
+    32,
+    4
+   ],
+   [
+    4,
+    32,
+    0
+   ],
+   [
+    5,
+    32,
+    17
+   ],
+   [
+    0,
+    33,
+    39
+   ],
+   [
+    1,
+    33,
+    23
+   ],
+   [
+    2,
+    33,
+    10
+   ],
+   [
+    3,
+    33,
+    3
+   ],
+   [
+    4,
+    33,
+    3
+   ],
+   [
+    5,
+    33,
+    9
+   ],
+   [
+    0,
+    34,
+    10
+   ],
+   [
+    1,
+    34,
+    6
+   ],
+   [
+    2,
+    34,
+    4
+   ],
+   [
+    3,
+    34,
+    0
+   ],
+   [
+    4,
+    34,
+    0
+   ],
+   [
+    5,
+    34,
+    2
+   ],
+   [
+    0,
+    35,
+    4
+   ],
+   [
+    1,
+    35,
+    0
+   ],
+   [
+    2,
+    35,
+    2
+   ],
+   [
+    3,
+    35,
+    0
+   ],
+   [
+    4,
+    35,
+    0
+   ],
+   [
+    5,
+    35,
+    3
+   ],
+   [
+    0,
+    36,
+    28
+   ],
+   [
+    1,
+    36,
+    8
+   ],
+   [
+    2,
+    36,
+    0
+   ],
+   [
+    3,
+    36,
+    5
+   ],
+   [
+    4,
+    36,
+    2
+   ],
+   [
+    5,
+    36,
+    10
+   ],
+   [
+    0,
+    37,
+    28
+   ],
+   [
+    1,
+    37,
+    13
+   ],
+   [
+    2,
+    37,
+    13
+   ],
+   [
+    3,
+    37,
+    0
+   ],
+   [
+    4,
+    37,
+    0
+   ],
+   [
+    5,
+    37,
+    13
+   ],
+   [
+    0,
+    38,
+    39
+   ],
+   [
+    1,
+    38,
+    22
+   ],
+   [
+    2,
+    38,
+    9
+   ],
+   [
+    3,
+    38,
+    0
+   ],
+   [
+    4,
+    38,
+    3
+   ],
+   [
+    5,
+    38,
+    19
+   ],
+   [
+    0,
+    39,
+    34
+   ],
+   [
+    1,
+    39,
+    21
+   ],
+   [
+    2,
+    39,
+    18
+   ],
+   [
+    3,
+    39,
+    0
+   ],
+   [
+    4,
+    39,
+    0
+   ],
+   [
+    5,
+    39,
+    13
+   ],
+   [
+    0,
+    40,
+    47
+   ],
+   [
+    1,
+    40,
+    35
+   ],
+   [
+    2,
+    40,
+    12
+   ],
+   [
+    3,
+    40,
+    0
+   ],
+   [
+    4,
+    40,
+    0
+   ],
+   [
+    5,
+    40,
+    17
+   ],
+   [
+    0,
+    41,
+    13
+   ],
+   [
+    1,
+    41,
+    7
+   ],
+   [
+    2,
+    41,
+    4
+   ],
+   [
+    3,
+    41,
+    1
+   ],
+   [
+    4,
+    41,
+    0
+   ],
+   [
+    5,
+    41,
+    0
+   ],
+   [
+    0,
+    42,
+    7
+   ],
+   [
+    1,
+    42,
+    6
+   ],
+   [
+    2,
+    42,
+    4
+   ],
+   [
+    3,
+    42,
+    0
+   ],
+   [
+    4,
+    42,
+    1
+   ],
+   [
+    5,
+    42,
+    4
+   ],
+   [
+    0,
+    43,
+    31
+   ],
+   [
+    1,
+    43,
+    28
+   ],
+   [
+    2,
+    43,
+    17
+   ],
+   [
+    3,
+    43,
+    3
+   ],
+   [
+    4,
+    43,
+    3
+   ],
+   [
+    5,
+    43,
+    13
+   ],
+   [
+    0,
+    44,
+    0
+   ],
+   [
+    1,
+    44,
+    37
+   ],
+   [
+    2,
+    44,
+    6
+   ],
+   [
+    3,
+    44,
+    0
+   ],
+   [
+    4,
+    44,
+    0
+   ],
+   [
+    5,
+    44,
+    10
+   ]
+  ]
+ },
+ "execucoes": [
+  {
+   "id": "sim-20261117-0932",
+   "tipo": "simulação",
+   "inicio": "2026-11-17T09:32-03:00",
+   "fim": "2026-11-17T09:32-03:00",
+   "duracao_s": 35,
+   "estado": "verificada",
+   "grupos": 4,
+   "mensagens": 52,
+   "arquivos_preparados": 5,
+   "arquivos_verificados": 0,
+   "erro": null
+  },
+  {
+   "id": "pub-20261117-0300",
+   "tipo": "automática",
+   "inicio": "2026-11-17T03:00-03:00",
+   "fim": "2026-11-17T03:01-03:00",
+   "duracao_s": 48,
+   "estado": "verificada",
+   "grupos": 4,
+   "mensagens": 132,
+   "arquivos_preparados": 6,
+   "arquivos_verificados": 6,
+   "erro": null
+  },
+  {
+   "id": "pub-20261116-0300",
+   "tipo": "automática",
+   "inicio": "2026-11-16T03:00-03:00",
+   "fim": "2026-11-16T03:01-03:00",
+   "duracao_s": 81,
+   "estado": "verificada",
+   "grupos": 4,
+   "mensagens": 139,
+   "arquivos_preparados": 9,
+   "arquivos_verificados": 9,
+   "erro": null
+  },
+  {
+   "id": "pub-20261115-0300",
+   "tipo": "automática",
+   "inicio": "2026-11-15T03:00-03:00",
+   "fim": "2026-11-15T03:01-03:00",
+   "duracao_s": 83,
+   "estado": "parcial",
+   "grupos": 4,
+   "mensagens": 97,
+   "arquivos_preparados": 5,
+   "arquivos_verificados": 3,
+   "erro": "Dois arquivos divergiram na conferência; reenviados na execução seguinte."
+  },
+  {
+   "id": "pub-20261114-0300",
+   "tipo": "automática",
+   "inicio": "2026-11-14T03:00-03:00",
+   "fim": "2026-11-14T03:02-03:00",
+   "duracao_s": 115,
+   "estado": "verificada",
+   "grupos": 4,
+   "mensagens": 77,
+   "arquivos_preparados": 6,
+   "arquivos_verificados": 6,
+   "erro": null
+  },
+  {
+   "id": "pub-20261113-1012",
+   "tipo": "manual",
+   "inicio": "2026-11-13T10:12-03:00",
+   "fim": "2026-11-13T10:15-03:00",
+   "duracao_s": 212,
+   "estado": "verificada",
+   "grupos": 4,
+   "mensagens": 231,
+   "arquivos_preparados": 16,
+   "arquivos_verificados": 16,
+   "erro": null
+  },
+  {
+   "id": "pub-20261113-0300",
+   "tipo": "automática",
+   "inicio": "2026-11-13T03:00-03:00",
+   "fim": "2026-11-13T03:00-03:00",
+   "duracao_s": 1,
+   "estado": "bloqueada",
+   "grupos": 0,
+   "mensagens": 0,
+   "arquivos_preparados": 0,
+   "arquivos_verificados": 0,
+   "erro": "Bloqueio ativo após a falha anterior; aguarda revisão."
+  },
+  {
+   "id": "pub-20261112-0300",
+   "tipo": "automática",
+   "inicio": "2026-11-12T03:00-03:00",
+   "fim": "2026-11-12T03:01-03:00",
+   "duracao_s": 49,
+   "estado": "falhou",
+   "grupos": 4,
+   "mensagens": 92,
+   "arquivos_preparados": 9,
+   "arquivos_verificados": 0,
+   "erro": "Destino remoto não respondeu (tempo esgotado na conferência)."
+  },
+  {
+   "id": "pub-20261111-0300",
+   "tipo": "automática",
+   "inicio": "2026-11-11T03:00-03:00",
+   "fim": "2026-11-11T03:01-03:00",
+   "duracao_s": 64,
+   "estado": "verificada",
+   "grupos": 4,
+   "mensagens": 138,
+   "arquivos_preparados": 8,
+   "arquivos_verificados": 8,
+   "erro": null
+  },
+  {
+   "id": "pub-20261110-0300",
+   "tipo": "automática",
+   "inicio": "2026-11-10T03:00-03:00",
+   "fim": "2026-11-10T03:02-03:00",
+   "duracao_s": 93,
+   "estado": "verificada",
+   "grupos": 4,
+   "mensagens": 43,
+   "arquivos_preparados": 5,
+   "arquivos_verificados": 5,
+   "erro": null
+  },
+  {
+   "id": "pub-20261109-0300",
+   "tipo": "automática",
+   "inicio": "2026-11-09T03:00-03:00",
+   "fim": "2026-11-09T03:01-03:00",
+   "duracao_s": 100,
+   "estado": "verificada",
+   "grupos": 4,
+   "mensagens": 67,
+   "arquivos_preparados": 7,
+   "arquivos_verificados": 7,
+   "erro": null
+  },
+  {
+   "id": "pub-20261108-0300",
+   "tipo": "automática",
+   "inicio": "2026-11-08T03:00-03:00",
+   "fim": "2026-11-08T03:02-03:00",
+   "duracao_s": 80,
+   "estado": "verificada",
+   "grupos": 4,
+   "mensagens": 158,
+   "arquivos_preparados": 7,
+   "arquivos_verificados": 7,
+   "erro": null
+  },
+  {
+   "id": "pub-20261107-0300",
+   "tipo": "automática",
+   "inicio": "2026-11-07T03:00-03:00",
+   "fim": "2026-11-07T03:01-03:00",
+   "duracao_s": 60,
+   "estado": "verificada",
+   "grupos": 4,
+   "mensagens": 103,
+   "arquivos_preparados": 6,
+   "arquivos_verificados": 6,
+   "erro": null
+  },
+  {
+   "id": "pub-20261106-0300",
+   "tipo": "automática",
+   "inicio": "2026-11-06T03:00-03:00",
+   "fim": "2026-11-06T03:01-03:00",
+   "duracao_s": 67,
+   "estado": "verificada",
+   "grupos": 4,
+   "mensagens": 157,
+   "arquivos_preparados": 8,
+   "arquivos_verificados": 8,
+   "erro": null
+  },
+  {
+   "id": "pub-20261105-0300",
+   "tipo": "automática",
+   "inicio": "2026-11-05T03:00-03:00",
+   "fim": "2026-11-05T03:01-03:00",
+   "duracao_s": 86,
+   "estado": "verificada",
+   "grupos": 4,
+   "mensagens": 115,
+   "arquivos_preparados": 4,
+   "arquivos_verificados": 4,
+   "erro": null
+  },
+  {
+   "id": "pub-20261104-0300",
+   "tipo": "automática",
+   "inicio": "2026-11-04T03:00-03:00",
+   "fim": "2026-11-04T03:01-03:00",
+   "duracao_s": 78,
+   "estado": "verificada",
+   "grupos": 4,
+   "mensagens": 140,
+   "arquivos_preparados": 9,
+   "arquivos_verificados": 9,
+   "erro": null
+  }
+ ]
+}

@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>ASPONE Visão geral</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Tema escolhido no botão; sem escolha salva, segue o sistema. Aplicado antes do CSS para não piscar. */
+try { const t = localStorage.getItem('aspone-tema'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<style>
+/* Tokens do FGV Projetos Design System.
+   Séries (--c1 a --c3) validadas com o validador de paleta (claro e escuro): ordem fixa
+   ao vivo, histórico GOWS, exportação TXT. Azul e roxo nunca ficam lado a lado. */
+:root {
+  --bg: #ffffff; --bg-subtle: #f5f7fa; --bg-brand-subtle: #d9eef7;
+  --text: #333333; --muted: #6f6f6f; --brand: #0c63aa; --brand-strong: #043f7d;
+  --border: #e7e9ed; --border-strong: #a8adb4; --interactive: #0c63aa; --focus: #73bfe8;
+  --on-brand: #ffffff;
+  --success: #3bae96; --on-success: #26705e; --warning: #f26b43; --on-warning: #7a4f00; --danger: #9b0a51;
+  --c1: #008bc9; --c2: #6f9a3a; --c3: #5b4fb0;
+  --q0: #b9e0f4; --q1: #7fc4ea; --q2: #4aaee0; --q3: #0c63aa; --q4: #043f7d;
+  --band: linear-gradient(135deg, #73bfe8, #043f7d);
+  --font: Arial, Helvetica, 'Liberation Sans', 'Arimo', sans-serif;
+  --r-sm: 2px; --r-md: 4px;
+  --shadow: 0 1px 2px rgba(0, 45, 77, 0.08);
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #001d33; --bg-subtle: #002d4d; --bg-brand-subtle: #073e63;
+  --text: #e8edf2; --muted: #afaeb4; --brand: #73bfe8; --brand-strong: #73bfe8;
+  --border: #0d3b5c; --border-strong: #1d5c85; --interactive: #73bfe8; --on-brand: #001d33;
+  --on-success: #8bc8c0; --on-warning: #fbae40; --danger: #e0679f;
+  --c1: #1597d4; --c2: #6a9e34; --c3: #9a7fe0;
+  --q0: #1d5c85; --q1: #2878ad; --q2: #3d9bd3; --q3: #79c2ea; --q4: #c4e7f8;
+  color-scheme: dark;
+} }
+:root[data-theme="dark"] {
+  --bg: #001d33; --bg-subtle: #002d4d; --bg-brand-subtle: #073e63;
+  --text: #e8edf2; --muted: #afaeb4; --brand: #73bfe8; --brand-strong: #73bfe8;
+  --border: #0d3b5c; --border-strong: #1d5c85; --interactive: #73bfe8; --on-brand: #001d33;
+  --on-success: #8bc8c0; --on-warning: #fbae40; --danger: #e0679f;
+  --c1: #1597d4; --c2: #6a9e34; --c3: #9a7fe0;
+  --q0: #1d5c85; --q1: #2878ad; --q2: #3d9bd3; --q3: #79c2ea; --q4: #c4e7f8;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font); font-size: 15px; line-height: 1.5; }
+.wrap { max-width: 1280px; margin-inline: auto; padding-inline: 16px; }
+h1, h2, h3 { margin: 0; line-height: 1.2; text-wrap: balance; }
+button { font: inherit; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.muted { color: var(--muted); }
+.num { font-variant-numeric: tabular-nums; }
+
+.band { position: relative; overflow: hidden; background: var(--band); color: #fff; }
+.band::after { content: ""; position: absolute; inset-block: 0; right: -8%; width: 42%; background: rgba(255,255,255,0.07); transform: skewX(-12deg); pointer-events: none; }
+.band .wrap { position: relative; z-index: 1; padding-block: 20px; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+.band h1 { font-size: clamp(1.5rem, 3.4vw, 2.2rem); }
+.band p { margin: 4px 0 0; opacity: 0.92; font-size: 14px; }
+.btn-icone { flex: none; width: 32px; height: 32px; display: grid; place-items: center; padding: 0; border: 1px solid rgba(255,255,255,0.6); border-radius: var(--r-sm); background: rgba(255,255,255,0.12); color: #fff; cursor: pointer; }
+.btn-icone:hover { background: rgba(255,255,255,0.24); }
+.btn-icone svg { width: 16px; height: 16px; }
+
+.aviso { border-left: 4px solid var(--warning); background: color-mix(in srgb, var(--warning) 12%, transparent); padding: 10px 14px; border-radius: var(--r-sm); font-size: 14px; }
+
+main .wrap { display: grid; gap: 28px; padding-block: 20px 48px; }
+section { display: grid; gap: 14px; min-width: 0; }
+.sec-head { display: flex; justify-content: space-between; align-items: end; gap: 12px; flex-wrap: wrap; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+.sec-head h2 { font-size: 1.3rem; color: var(--brand-strong); }
+.sec-head .muted { font-size: 13px; }
+
+.grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr)); }
+.card { border: 1px solid var(--border); border-radius: var(--r-md); background: var(--bg); padding: 12px 14px; display: grid; gap: 4px; align-content: start; box-shadow: var(--shadow); }
+.card h3 { font-size: 14px; color: var(--muted); font-weight: 700; }
+.card .valor { font-size: 1.7rem; font-weight: 700; color: var(--brand-strong); line-height: 1.15; }
+.card .valor.menor { font-size: 1.15rem; }
+.card .sub { font-size: 13px; color: var(--muted); }
+.trio { display: grid; gap: 2px; }
+.trio > div { display: flex; align-items: baseline; gap: 8px; }
+.trio .valor { font-size: 1.35rem; min-width: 3.2ch; text-align: right; }
+.trio .rot { font-size: 13px; color: var(--muted); }
+
+.estado { display: inline-flex; align-items: center; gap: 6px; font-weight: 700; font-size: 14px; }
+.estado svg { width: 16px; height: 16px; flex: none; }
+.e-ok { color: var(--on-success); }
+.e-alerta { color: var(--on-warning); }
+.e-falha { color: var(--danger); }
+.e-info { color: var(--interactive); }
+.e-neutro { color: var(--muted); }
+
+.panel { border: 1px solid var(--border); border-radius: var(--r-md); padding: 14px; display: grid; gap: 8px; min-width: 0; }
+.panel h3 { font-size: 15px; }
+.panel .src { font-size: 13px; color: var(--muted); }
+.duas { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 520px), 1fr)); }
+.chart { width: 100%; min-height: 120px; }
+.legenda { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 13px; }
+.legenda span { display: inline-flex; align-items: center; gap: 6px; }
+.legenda i { width: 12px; height: 12px; border-radius: 2px; display: inline-block; }
+.legenda i.vazio { background: transparent; border: 1px dashed var(--border-strong); }
+
+details summary { cursor: pointer; font-size: 13px; color: var(--interactive); font-weight: 700; }
+.tabela-rolagem { overflow-x: auto; max-width: 100%; }
+table { border-collapse: collapse; width: 100%; font-size: 13px; }
+th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--border); white-space: nowrap; vertical-align: top; }
+th { color: var(--muted); font-weight: 700; background: var(--bg-subtle); position: sticky; top: 0; }
+td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
+td.erro { white-space: normal; min-width: 220px; max-width: 320px; color: var(--muted); }
+</style>
+</head>
+<body>
+<header class="band">
+  <div class="wrap">
+    <div>
+      <h1>Visão geral da coleta</h1>
+      <p>ASPONE · integração WhatsApp · <span id="gerado"></span></p>
+    </div>
+    <button class="btn-icone" id="b-tema" type="button" aria-label="Alternar tema claro e escuro" title="Alternar tema"></button>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <div class="aviso" id="aviso-sintetico" role="note"><strong>Protótipo com dados sintéticos.</strong> Grupos e números são inventados; nada aqui descreve o ambiente real. Conteúdo de conversas não é exibido nesta tela.</div>
+
+    <section aria-labelledby="h-saude">
+      <div class="sec-head"><h2 id="h-saude">Saúde dos componentes</h2><span class="muted">Estado observado na última verificação. Sem verificação recente, o estado é tratado como desatualizado.</span></div>
+      <div class="grid" id="saude"></div>
+    </section>
+
+    <section aria-labelledby="h-num">
+      <div class="sec-head"><h2 id="h-num">Grupos, acervo e publicação</h2><span class="muted">Descobrir, selecionar e habilitar são etapas distintas.</span></div>
+      <div class="grid" id="numeros"></div>
+    </section>
+
+    <section aria-labelledby="h-coleta">
+      <div class="sec-head"><h2 id="h-coleta">Coleta</h2><span class="muted" id="periodo"></span></div>
+      <div class="panel">
+        <h3>Mensagens por dia, por fonte</h3>
+        <div class="legenda" id="leg-fontes"></div>
+        <div class="chart" id="g-fontes"></div>
+        <span class="src">Ao vivo cobre a janela do webhook; antes dela, o volume vem do backfill GOWS e das exportações oficiais importadas. Queda abrupta num dia recente indica falha de coleta.</span>
+        <details><summary>Ver tabela</summary><div class="tabela-rolagem" id="t-fontes"></div></details>
+      </div>
+      <div class="duas">
+        <div class="panel">
+          <h3>Cobertura por grupo e dia</h3>
+          <div class="legenda" id="leg-cob"></div>
+          <div class="chart" id="g-cobertura"></div>
+          <span class="src">Cada célula é o número de mensagens do grupo no dia. Células vazias marcam dias sem nenhuma mensagem: silêncio normal do grupo ou lacuna de coleta. Compare com os outros grupos no mesmo dia.</span>
+          <details><summary>Ver tabela</summary><div class="tabela-rolagem" id="t-cobertura"></div></details>
+        </div>
+        <div class="panel">
+          <h3>Edições e revogações por dia</h3>
+          <div class="legenda" id="leg-mut"></div>
+          <div class="chart" id="g-mut"></div>
+          <span class="src">Mutações resolvidas contra a mensagem original. As pendentes (sem correspondência única) aparecem no cartão de publicação.</span>
+          <details><summary>Ver tabela</summary><div class="tabela-rolagem" id="t-mut"></div></details>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="h-exec">
+      <div class="sec-head"><h2 id="h-exec">Execuções do publicador</h2><span class="muted">Disparo não equivale a sucesso: só "Concluída e verificada" passou pela conferência remota.</span></div>
+      <div class="panel">
+        <h3>Arquivos preparados e verificados por execução</h3>
+        <div class="legenda" id="leg-exec"></div>
+        <div class="chart" id="g-exec"></div>
+      </div>
+      <div class="tabela-rolagem" id="t-exec"></div>
+    </section>
+  </div>
+</main>
+
+<script id="dados" type="application/json">/*__DADOS__*/null</script>
+<!--__ECHARTS__-->
+<script>
+const D = JSON.parse(document.getElementById('dados').textContent);
+const EC = window.echarts;
+const raiz = document.documentElement;
+const $ = id => document.getElementById(id);
+const tok = v => getComputedStyle(raiz).getPropertyValue(v).trim();
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const nf = new Intl.NumberFormat('pt-BR');
+const int = v => nf.format(v);
+const dm = s => s.slice(8, 10) + '/' + s.slice(5, 7);
+const dataHora = s => new Date(s).toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo', day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
+const AGORA = new Date(D.gerado_em);
+const atras = s => { const m = Math.round((AGORA - new Date(s)) / 60000); return m < 60 ? `há ${m} min` : m < 1440 ? `há ${Math.floor(m / 60)} h ${m % 60} min` : `há ${Math.floor(m / 1440)} d`; };
+
+// Ícones de estado: a cor nunca aparece sozinha, sempre com ícone e rótulo.
+const IC = {
+  ok: '<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="currentColor"/><path d="M4.5 8.2l2.2 2.2 4.8-4.8" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  alerta: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5l7 12.5H1z" fill="currentColor"/><path d="M8 6v3.6M8 11.6v.4" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>',
+  falha: '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" rx="2" fill="currentColor"/><path d="M5 5l6 6M11 5l-6 6" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>',
+  info: '<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 4.5V8l2.4 1.6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>',
+  neutro: '<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="3 2"/><path d="M6.3 6.3a1.8 1.8 0 1 1 2.4 1.7c-.5.2-.7.6-.7 1.1M8 11.4v.3" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>',
+};
+const chip = (tipo, rotulo) => `<span class="estado e-${tipo}">${IC[tipo]}${esc(rotulo)}</span>`;
+const SAUDE = { ok: ['ok', 'Operando'], falha: ['falha', 'Com falha'], desconhecido: ['neutro', 'Desconhecido'] };
+const EXEC = { verificada: ['ok', 'Concluída e verificada'], falhou: ['falha', 'Falhou'], bloqueada: ['alerta', 'Bloqueada'],
+  parcial: ['alerta', 'Parcial'], executando: ['info', 'Executando'], pendente: ['info', 'Pendente'], desconhecida: ['neutro', 'Desconhecida'] };
+const DESATUALIZADO_MIN = 30;
+
+// ---------------- Cabeçalho, saúde e números
+$('gerado').textContent = `dados de ${dataHora(D.gerado_em)} (${D.fuso})`;
+if (!D.sintetico) $('aviso-sintetico').hidden = true;
+
+$('saude').innerHTML = D.saude.map(s => {
+  let [tipo, rot] = SAUDE[s.estado] || SAUDE.desconhecido;
+  const velho = (AGORA - new Date(s.verificado_em)) / 60000 > DESATUALIZADO_MIN;
+  if (velho && s.estado === 'ok') [tipo, rot] = ['alerta', 'Desatualizado'];
+  return `<div class="card"><h3>${esc(s.componente)}</h3>${chip(tipo, rot)}
+    <span class="sub">${esc(s.detalhe)}</span><span class="sub">Verificado ${atras(s.verificado_em)}${velho ? ' (acima de ' + DESATUALIZADO_MIN + ' min)' : ''}</span></div>`;
+}).join('');
+
+const G = D.grupos, A = D.acervo, P = D.publicacao;
+const trio = itens => `<div class="trio">${itens.map(([v, r]) => `<div><div class="valor num">${int(v)}</div><div class="rot">${r}</div></div>`).join('')}</div>`;
+$('numeros').innerHTML = `
+  <div class="card"><h3>Grupos</h3>${trio([[G.descobertos, 'descobertos'], [G.selecionados, 'selecionados'], [G.habilitados, 'publicação habilitada']])}
+    <span class="sub">Grupo novo nunca é habilitado automaticamente.</span></div>
+  <div class="card"><h3>Acervo</h3>${trio([[A.mensagens, 'mensagens no banco'], [A.md_locais, 'MD diários locais'], [A.md_publicados, 'MD publicados']])}
+    <span class="sub">${int(A.historico_recuperado)} mensagens vieram de histórico recuperado; ${int(A.retidos)} retidas na importação.</span></div>
+  <div class="card"><h3>Última publicação verificada</h3><div class="valor menor num">${dataHora(P.ultima_verificada)}</div>
+    <span class="sub">${atras(P.ultima_verificada)}</span></div>
+  <div class="card"><h3>Próxima execução</h3><div class="valor menor num">${dataHora(P.proxima_execucao)}</div>
+    <span class="sub">${esc(P.agendamento)}</span></div>
+  <div class="card"><h3>Último evento recebido</h3><div class="valor menor num">${dataHora(P.ultimo_evento)}</div>
+    <span class="sub">${atras(P.ultimo_evento)}</span></div>
+  <div class="card"><h3>Mutações pendentes</h3>
+    ${P.mutacoes_pendentes ? chip('alerta', int(P.mutacoes_pendentes) + ' sem correspondência única') : chip('ok', 'Nenhuma')}
+    <span class="sub">Edições ou revogações que não acharam a mensagem original. Investigar antes de publicar o dia.</span></div>`;
+
+// ---------------- Tabelas (vista acessível de cada gráfico)
+function tabela(cab, linhas, numericas = []) {
+  return `<table><thead><tr>${cab.map((c, i) => `<th${numericas.includes(i) ? ' class="n"' : ''}>${esc(c)}</th>`).join('')}</tr></thead><tbody>${
+    linhas.map(l => `<tr>${l.map((v, i) => `<td${numericas.includes(i) ? ' class="n"' : ''}>${v}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+}
+const FONTES = Object.keys(D.fontes);
+const MPD = D.mensagens_por_dia;
+$('periodo').textContent = `${dm(MPD[0].dia)} a ${dm(MPD[MPD.length - 1].dia)}, ${MPD.length} dias`;
+$('t-fontes').innerHTML = tabela(['Dia', ...FONTES.map(f => D.fontes[f]), 'Total'],
+  MPD.map(r => [dm(r.dia), ...FONTES.map(f => int(r[f])), int(FONTES.reduce((s, f) => s + r[f], 0))]), [1, 2, 3, 4]);
+$('t-mut').innerHTML = tabela(['Dia', 'Edições', 'Revogações'], D.mutacoes_por_dia.map(r => [dm(r.dia), int(r.edicoes), int(r.revogacoes)]), [1, 2]);
+const C = D.cobertura;
+$('t-cobertura').innerHTML = tabela(['Dia', ...C.grupos], C.dias.map((d, di) => [dm(d), ...C.grupos.map((_, gi) => {
+  const v = C.valores.find(x => x[0] === gi && x[1] === di)[2]; return v ? int(v) : '<span class="muted">sem mensagens</span>'; })]), C.grupos.map((_, i) => i + 1));
+$('t-exec').innerHTML = tabela(['Início', 'Tipo', 'Estado', 'Erro', 'Duração', 'Grupos', 'Mensagens', 'Preparados', 'Verificados', 'Identificador'],
+  D.execucoes.map(e => { const [t, r] = EXEC[e.estado] || EXEC.desconhecida; return [dataHora(e.inicio), esc(e.tipo), chip(t, r), `<span>${esc(e.erro || '')}</span>`,
+    e.duracao_s >= 60 ? `${Math.floor(e.duracao_s / 60)} min ${e.duracao_s % 60} s` : `${e.duracao_s} s`,
+    int(e.grupos), int(e.mensagens), int(e.arquivos_preparados), e.tipo === 'simulação' ? '<span class="muted">não envia</span>' : int(e.arquivos_verificados),
+    `<code>${esc(e.id)}</code>`]; }), [4, 5, 6, 7, 8])
+  .replace(/<td><span>/g, '<td class="erro"><span>');
+
+// ---------------- Gráficos (ECharts, renderer SVG, cores lidas dos tokens a cada pintura)
+const legenda = (id, itens) => { $(id).innerHTML = itens.map(([cor, rot]) => `<span><i style="background:var(${cor})"></i>${esc(rot)}</span>`).join(''); };
+legenda('leg-fontes', FONTES.map((f, i) => [`--c${i + 1}`, D.fontes[f]]));
+legenda('leg-mut', [['--c1', 'Edições'], ['--c2', 'Revogações']]);
+legenda('leg-exec', [['--c1', 'Preparados'], ['--c2', 'Verificados']]);
+const FAIXAS = [[1, 5], [6, 15], [16, 30], [31, 50], [51, Infinity]];
+const rotFaixa = ([a, b]) => b === Infinity ? `${a} ou mais` : `${a} a ${b}`;
+legenda('leg-cob', FAIXAS.map((f, i) => [`--q${i}`, rotFaixa(f)]));
+$('leg-cob').insertAdjacentHTML('afterbegin', '<span><i class="vazio"></i>sem mensagens</span>');
+
+function ecPintar(el, altura, opcao) {
+  let g = EC.getInstanceByDom(el);
+  el.style.height = altura + 'px';
+  g = g || EC.init(el, null, { renderer: 'svg' });
+  const txt = tok('--text'), mut = tok('--muted'), brd = tok('--border');
+  g.setOption(Object.assign({
+    animationDuration: 400,
+    textStyle: { fontFamily: tok('--font'), color: txt },
+    tooltip: { backgroundColor: tok('--bg'), borderColor: tok('--border-strong'), textStyle: { color: txt, fontSize: 13 }, confine: true },
+  }, opcao(txt, mut, brd)), true);
+  g.resize();
+  return g;
+}
+const eixoCat = (dados, mut, brd, extra = {}) => ({ type: 'category', data: dados, axisLine: { lineStyle: { color: brd } }, axisTick: { show: false },
+  axisLabel: { color: mut, fontSize: 11, hideOverlap: true, ...extra } });
+const eixoVal = (mut, brd) => ({ type: 'value', axisLabel: { color: mut, fontSize: 11, formatter: v => int(v) }, splitLine: { lineStyle: { color: brd } } });
+const dicaLinhas = (titulo, linhas) => `<b>${esc(titulo)}</b><br>` + linhas.map(([cor, rot, v]) =>
+  `<span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:${cor};margin-right:6px"></span>${esc(rot)}: <b>${v}</b>`).join('<br>');
+
+function pintarFontes() {
+  const dias = MPD.map(r => dm(r.dia)), sup = tok('--bg');
+  ecPintar($('g-fontes'), 280, (txt, mut, brd) => ({
+    grid: { left: 48, right: 12, top: 12, bottom: 28 },
+    tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' }, formatter: ps => dicaLinhas(MPD[ps[0].dataIndex].dia.split('-').reverse().join('/'),
+      [...ps.map(p => [p.color, p.seriesName, int(p.value)]), [tok('--muted'), 'Total', int(ps.reduce((s, p) => s + p.value, 0))]]) },
+    xAxis: eixoCat(dias, mut, brd), yAxis: eixoVal(mut, brd),
+    series: FONTES.map((f, i) => ({ name: D.fontes[f], type: 'bar', stack: 'total', barMaxWidth: 16,
+      itemStyle: { color: tok(`--c${i + 1}`), borderColor: sup, borderWidth: 1, borderRadius: i === FONTES.length - 1 ? [4, 4, 0, 0] : 0 },
+      emphasis: { focus: 'series' }, data: MPD.map(r => r[f]) })),
+  }));
+}
+
+function pintarCobertura() {
+  const dias = C.dias.map(dm), sup = tok('--bg');
+  ecPintar($('g-cobertura'), 36 + C.grupos.length * 34, (txt, mut, brd) => ({
+    grid: { left: 70, right: 12, top: 8, bottom: 28 },
+    tooltip: { formatter: p => `<b>${esc(C.grupos[p.value[1]])}</b>, ${C.dias[p.value[0]].split('-').reverse().join('/')}<br>${p.value[2] ? int(p.value[2]) + ' mensagens' : 'sem mensagens'}` },
+    xAxis: eixoCat(dias, mut, brd), yAxis: { ...eixoCat(C.grupos, mut, brd, { fontSize: 12 }), inverse: true, splitArea: { show: false } },
+    visualMap: { type: 'piecewise', show: false, dimension: 2,
+      pieces: [{ value: 0, color: sup }, ...FAIXAS.map(([a, b], i) => ({ min: a, max: b === Infinity ? undefined : b, color: tok(`--q${i}`) }))] },
+    series: [{ type: 'heatmap', data: C.valores.map(([g, d, v]) => v ? [d, g, v] : { value: [d, g, 0], itemStyle: { borderColor: tok('--border-strong'), borderType: 'dashed', borderWidth: 1 } }), itemStyle: { borderColor: sup, borderWidth: 2, borderRadius: 2 },
+      emphasis: { itemStyle: { borderColor: tok('--text'), borderWidth: 1 } } }],
+  }));
+}
+
+function pintarMutacoes() {
+  const R = D.mutacoes_por_dia;
+  ecPintar($('g-mut'), 240, (txt, mut, brd) => ({
+    grid: { left: 40, right: 12, top: 12, bottom: 28 },
+    tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' },
+      formatter: ps => dicaLinhas(R[ps[0].dataIndex].dia.split('-').reverse().join('/'), ps.map(p => [p.color, p.seriesName, int(p.value)])) },
+    xAxis: eixoCat(R.map(r => dm(r.dia)), mut, brd), yAxis: { ...eixoVal(mut, brd), minInterval: 1 },
+    series: [['Edições', 'edicoes', '--c1'], ['Revogações', 'revogacoes', '--c2']].map(([nome, k, cor]) => ({ name: nome, type: 'bar', barMaxWidth: 6, barGap: '20%',
+      data: R.map(r => r[k]), itemStyle: { color: tok(cor), borderRadius: [4, 4, 0, 0] }, emphasis: { focus: 'series' } })),
+  }));
+}
+
+function pintarExecucoes() {
+  const E = D.execucoes.filter(e => e.tipo !== 'simulação').slice().reverse(), sup = tok('--bg');
+  const cor = { ok: '--on-success', alerta: '--on-warning', falha: '--danger', info: '--interactive', neutro: '--muted' };
+  ecPintar($('g-exec'), 240, (txt, mut, brd) => ({
+    grid: { left: 40, right: 12, top: 12, bottom: 44 },
+    tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' }, formatter: ps => { const e = E[ps[0].dataIndex]; const [t, r] = EXEC[e.estado] || EXEC.desconhecida;
+      return dicaLinhas(`${dataHora(e.inicio)} (${e.tipo})`, ps.map(p => [p.color, p.seriesName, int(p.value)])) + `<br>Estado: <b>${esc(r)}</b>` + (e.erro ? `<br><span style="color:${tok('--muted')}">${esc(e.erro)}</span>` : ''); } },
+    xAxis: eixoCat(E.map(e => dm(e.inicio.slice(0, 10)) + (e.tipo === 'manual' ? ' (m)' : '')), mut, brd, { interval: 0, hideOverlap: false,
+      formatter: (v, i) => { const t = (EXEC[E[i].estado] || EXEC.desconhecida)[0]; return t === 'ok' ? v : `{x|${v}}\n{${t}|${(EXEC[E[i].estado] || EXEC.desconhecida)[1]}}`; },
+      rich: Object.fromEntries([['x', '--muted'], ...Object.entries(cor)].map(([k, c]) => [k, { color: tok(c), fontSize: 11, fontWeight: k === 'x' ? 'normal' : 'bold' }])) }),
+    yAxis: { ...eixoVal(mut, brd), minInterval: 1 },
+    series: [['Preparados', 'arquivos_preparados', '--c1'], ['Verificados', 'arquivos_verificados', '--c2']].map(([nome, k, c]) => ({ name: nome, type: 'bar', barMaxWidth: 12, barGap: '15%',
+      itemStyle: { color: tok(c), borderRadius: [4, 4, 0, 0], borderColor: sup, borderWidth: 1 }, data: E.map(e => e[k]) })),
+  }));
+}
+
+function pintarTudo() {
+  if (!EC) {
+    document.querySelectorAll('.chart').forEach(el => { el.innerHTML = '<span class="muted">Gráfico indisponível: falta a biblioteca ECharts em vendor/. Use "Ver tabela".</span>'; });
+    return;
+  }
+  pintarFontes(); pintarCobertura(); pintarMutacoes(); pintarExecucoes();
+}
+pintarTudo();
+
+// ---------------- Tema e redimensionamento
+const ICONE_SOL = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
+const ICONE_LUA = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>';
+const escuro = () => raiz.dataset.theme ? raiz.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+const iconeTema = () => { $('b-tema').innerHTML = escuro() ? ICONE_SOL : ICONE_LUA; };
+iconeTema();
+$('b-tema').onclick = () => {
+  raiz.dataset.theme = escuro() ? 'light' : 'dark';
+  try { localStorage.setItem('aspone-tema', raiz.dataset.theme); } catch (e) {}
+  iconeTema(); pintarTudo();
+};
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => { if (!raiz.dataset.theme) { iconeTema(); pintarTudo(); } });
+let tRes; addEventListener('resize', () => { clearTimeout(tRes); tRes = setTimeout(() => document.querySelectorAll('.chart').forEach(el => EC && EC.getInstanceByDom(el)?.resize()), 120); });
+</script>
+</body>
+</html>
