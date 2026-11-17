@@ -1,0 +1,47 @@
+# Repositório público: nada de segredos, dados reais ou configuração do ambiente.
+# Valores de exemplo vão em arquivos *.example (ex.: .env.example, catalog.example.yaml).
+
+# Credenciais e segredos
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+credentials/
+rclone.conf
+
+# Configuração privada da instalação (catálogo de grupos, destinos)
+catalog.yaml
+catalog.json
+!*.example.*
+
+# Dados reais: sessão WAHA/GOWS, bancos, dumps, exportações, logs
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm
+*.sql.gz
+*.dump
+*.zip
+data/
+logs/
+*.log
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+
+# Temporários e sistema
+~$*
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
