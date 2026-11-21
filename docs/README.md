@@ -17,6 +17,7 @@ Esta árvore é a fonte versionada de documentação de produto, arquitetura e e
 | [Alimentação multifuente](alimentacao/README.md) | Como incorporar atas, transcrições, e-mails e documentos? |
 | [Contexto compartilhado](contexto/README.md) | Como relacionar projetos, equipes, agenda e reuniões? |
 | [Consolidação e correção](conhecimento/README.md) | Como manter conhecimento vigente, revisável e rastreável? |
+| **[Camada de Conhecimento e Verdade](conhecimento/camada-conhecimento-verdade.md)** | **O que distingue ingestão, conhecimento e consumo, e o que cada camada deve fazer?** |
 
 ## Estudos e conceitos compartilhados
 
