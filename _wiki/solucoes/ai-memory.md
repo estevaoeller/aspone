@@ -28,6 +28,13 @@ related:
 - Que partes poderiam ser reutilizadas sem vincular a base a um agente específico?
 - Qual licença, maturidade e limitações verificáveis?
 
+## Estudos teóricos relacionados
+
+- [Open Knowledge Format (OKF)](../referencias/okf-open-knowledge-format.md) — especificação do formato usada como referência para estudo.
+- [Proveniência, verificação, validade temporal e histórico](../referencias/conceitos-fundamentais-confianca-conhecimento.md) — vocabulário comum para avaliar representações de conhecimento.
+
+Os estudos descrevem conceitos e especificações, sem comprovar que o AI Memory implementa todas essas exigências e sem recomendar adoção automática.
+
 ## Status
 
 Estudo citado nas conversas anteriores; esta página não afirma testes de funcionamento, resultados ou adoção. Aprofundar com código e fontes antes de emitir conclusões técnicas.
