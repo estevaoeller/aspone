@@ -19,6 +19,14 @@ Atualizado em **20/11/2026**. Este registro descreve o repositório consultado n
 - **Validação:** o direcionamento para a wiki de trabalho foi indicado pela pessoa responsável; as interpretações e definições técnicas seguem `REQUIRES_REVIEW`.
 - **Aberto:** harmonizar os termos de verificação ampla, validade temporal e histórico com o glossário e a ontologia, sem presumir identidade entre vocabulários.
 
+## 20/11/2026 — Camada de Conhecimento e Verdade documentada
+
+- **Realizado na wiki pública e docs:** publicada a definição inicial da camada, as três responsabilidades do ASPONE, o papel do MD como representação de fontes, a relação com Knowledge Advisor e quatro artigos interligados de aprofundamento (fonte/afirmação, ciclo de vida, W3C PROV, histórico bitemporal).
+- **Destino canônico:** [camada conceitual](docs/conhecimento/camada-conhecimento-verdade.md), com estudos em [_wiki/INDEX.md](_wiki/INDEX.md) e [registro histórico](history/2026-11-20-camada-conhecimento-verdade.md).
+- **Validação:** publicação solicitada pelo responsável; interpretações, exemplos e proposta conceitual mantidos como `REQUIRES_REVIEW`.
+- **Não implementado/decidido:** tecnologias, modelo físico, critérios finais de autoridade e validação; nenhuma integração com Knowledge Advisor foi estabelecida.
+- **Próxima questão para discussão:** afirmação contextualizada e passagem de evidência para conhecimento confirmado, em exemplo pequeno. Ver itens MEM-01 a MEM-06 do backlog.
+
 ## Blocos encerrados
 
 - Nenhum bloco movido para o histórico ainda.
