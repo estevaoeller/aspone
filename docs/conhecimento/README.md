@@ -2,6 +2,10 @@
 
 **Estado:** proposta de processo, 14/11/2026. Não é especificação definitiva nem mecanismo já implementado.
 
+## Definição conceitual e orientação de leitura
+
+O artigo **[Camada de Conhecimento e Verdade dos Projetos](camada-conhecimento-verdade.md)** explicita a diferença entre **armazenar informações, recuperar informações e manter conhecimento**, apresenta as três responsabilidades (ingestão e preservação, organização/manutenção do conhecimento, consumo) e relaciona esta proposta de processo aos estudos de [fonte e afirmação](../../_wiki/conceitos/fonte-afirmacao-conhecimento.md), [W3C PROV](../../_wiki/referencias/w3c-prov.md) e [histórico bitemporal](../../_wiki/referencias/historico-bitemporal.md). É uma definição em discussão, não implantação concluída.
+
 ## Problema
 
 Acumular fontes não basta. O usuário precisa saber o que está valendo, por que está valendo, em qual escopo, quem confirmou, quais questões continuam abertas e quais entendimentos foram substituídos. Uma reunião, e-mail ou anotação pode conter uma proposta, uma dúvida ou uma decisão; isso não é determinado apenas pela existência do texto.
