@@ -229,6 +229,13 @@ O [artigo teórico sobre Open Knowledge Format (OKF)](okf-open-knowledge-format.
 
 O **W3C PROV-O** permite representar relações explícitas entre **entidades**, **atividades** e **agentes** na proveniência. O **W3C OWL-Time** dispõe de uma ontologia para instantes, intervalos e relações temporais. Os padrões auxiliam a modelagem, mas sua utilização concreta não está sendo decidida neste artigo.
 
+### Estudos específicos vinculados
+
+- [W3C PROV — modelo padronizado de proveniência](w3c-prov.md): entidades, atividades, agentes, relações de derivação e limites da consistência PROV.
+- [Histórico bitemporal](historico-bitemporal.md): tempo de validade e tempo de registro; diferenças entre o que se sabia e o que passou a ser conhecido.
+- [Fonte, afirmação, evidência e validação](../conceitos/fonte-afirmacao-conhecimento.md): como os conceitos podem ser aplicados ao conhecimento dos projetos.
+- [Camada de Conhecimento e Verdade](../../docs/conhecimento/camada-conhecimento-verdade.md): aplicação integrada ao ASPONE.
+
 ## 12. Situação e questões em aberto
 
 **Situação deste texto:** referência proposta, consistente com as definições consultadas, aguardando eventual revisão conceitual conjunta. **Não houve alteração no repositório de glossário e ontologia.**
