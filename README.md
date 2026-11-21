@@ -27,6 +27,7 @@ O ASPONE ainda está em fase de concepção. A arquitetura e as tecnologias ser�
 A documentação é mantida no próprio repositório, como Wiki versionada. O README acima preserva a concepção original.
 
 - [Mapa da documentação](docs/README.md)
+- [Wiki de trabalho e estudos conceituais](_wiki/INDEX.md) — referências públicas sobre OKF, memória, proveniência e revisão do conhecimento.
 - [To-do list do ASPONE](docs/backlog.md)
 - [Finalidade, benefícios e aplicações](docs/negocio.md)
 - [Arquitetura e responsabilidades](docs/arquitetura.md)
