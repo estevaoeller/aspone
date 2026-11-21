@@ -57,6 +57,10 @@ Não presumir um arquivo único como fonte canônica. Avaliar formato e local: a
 
 Quem pode declarar uma decisão vigente? Como registrar divergência entre reunião, e-mail e documento oficial? Como tratar decisão revogada ou parcialmente alterada? Como indicar que uma fonte foi corrigida ou deixou de estar acessível? Como evitar que consumidores reutilizem informação substituída? Quais artefatos são consultados e onde? Validar com exemplos fictícios e, depois, casos autorizados.
 
+## Referências conceituais
+
+As definições transversais de [proveniência, verificação, validade temporal, histórico, versionamento, rastreabilidade e auditabilidade](../../_wiki/referencias/conceitos-fundamentais-confianca-conhecimento.md) estão reunidas na wiki de trabalho. O [estudo sobre OKF](../../_wiki/referencias/okf-open-knowledge-format.md) descreve uma alternativa de representação, não uma arquitetura adotada. Estes textos não substituem a proposta de processo deste documento.
+
 ## Relações
 
 - [Arquitetura](../arquitetura.md)
