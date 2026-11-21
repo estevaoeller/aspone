@@ -18,6 +18,12 @@ Esta árvore é a fonte versionada de documentação de produto, arquitetura e e
 | [Contexto compartilhado](contexto/README.md) | Como relacionar projetos, equipes, agenda e reuniões? |
 | [Consolidação e correção](conhecimento/README.md) | Como manter conhecimento vigente, revisável e rastreável? |
 
+## Estudos e conceitos compartilhados
+
+- [Wiki de trabalho do ASPONE](../_wiki/INDEX.md): pesquisas, teorias, comparações de soluções e histórico de conceitos.
+- [Conceitos fundamentais de confiança e evolução do conhecimento](../_wiki/referencias/conceitos-fundamentais-confianca-conhecimento.md): terminologia comum para proveniência, verificação, validade temporal, histórico, versionamento, rastreabilidade e auditabilidade.
+- [Open Knowledge Format (OKF)](../_wiki/referencias/okf-open-knowledge-format.md): estudo da especificação, sem escolha arquitetural.
+
 ## Regras de manutenção
 
 1. Distinguir observado, proposto e pendente; datar evidências de implantação.
