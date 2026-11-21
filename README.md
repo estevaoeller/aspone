@@ -28,6 +28,7 @@ A documentação é mantida no próprio repositório, como Wiki versionada. O RE
 
 - [Mapa da documentação](docs/README.md)
 - [Wiki de trabalho e estudos conceituais](_wiki/INDEX.md) — referências públicas sobre OKF, memória, proveniência e revisão do conhecimento.
+- [Camada de Conhecimento e Verdade dos Projetos](docs/conhecimento/camada-conhecimento-verdade.md) — definição, três camadas e responsabilidades do ASPONE.
 - [To-do list do ASPONE](docs/backlog.md)
 - [Finalidade, benefícios e aplicações](docs/negocio.md)
 - [Arquitetura e responsabilidades](docs/arquitetura.md)
