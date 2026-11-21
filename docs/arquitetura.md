@@ -73,3 +73,4 @@ Este segundo diagrama descreve a visão pretendida, não estado implantado. Os c
 - [Alimentação multifuente](alimentacao/README.md)
 - [Contexto compartilhado](contexto/README.md)
 - [Consolidação e correção](conhecimento/README.md)
+- [Camada de Conhecimento e Verdade](conhecimento/camada-conhecimento-verdade.md) — definição conceitual e entendimento das três responsabilidades
