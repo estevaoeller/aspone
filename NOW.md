@@ -12,6 +12,13 @@ Atualizado em **20/11/2026**. Este registro descreve o repositório consultado n
 - **Próximo passo sugerido:** selecionar uma das questões documentadas em `TASKS.md` para discussão incremental; não iniciar implementação sem solicitação.
 - **Pendente de validação:** páginas analíticas da wiki com marca `REQUIRES_REVIEW`.
 
+## 20/11/2026 — Referências conceituais na wiki pública
+
+- **Registrado:** os estudos sobre OKF e sobre proveniência, verificação, validade temporal, histórico, versionamento, rastreabilidade e auditabilidade foram publicados em `_wiki/referencias/`, relacionados entre si, à pesquisa AI Memory e ao índice da wiki.
+- **Escopo documental esclarecido:** a wiki pública do ASPONE é a referência de trabalho para esses estudos. A wiki privada do Homelab pode manter cópias e evidências operacionais, sem sincronização automática.
+- **Validação:** o direcionamento para a wiki de trabalho foi indicado pela pessoa responsável; as interpretações e definições técnicas seguem `REQUIRES_REVIEW`.
+- **Aberto:** harmonizar os termos de verificação ampla, validade temporal e histórico com o glossário e a ontologia, sem presumir identidade entre vocabulários.
+
 ## Blocos encerrados
 
 - Nenhum bloco movido para o histórico ainda.
