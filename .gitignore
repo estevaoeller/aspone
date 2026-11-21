@@ -1,0 +1,16 @@
+# Arquivos privados e credenciais — nunca commitar
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*.json
+*secret*.json
+
+# Temporários locais
+__pycache__/
+*.pyc
+.DS_Store
+*.swp
+*.tmp
+z.old/
