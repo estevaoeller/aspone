@@ -23,8 +23,16 @@ A documentação de produto e engenharia continua em `docs/`; estas páginas sã
 - [Ariso / TRAM — referência de pesquisa](solucoes/ariso-tram.md): ciclo TRAM, aspectos aproveitáveis e diferenças frente ao ASPONE. `REQUIRES_REVIEW`
 - [Framework para avaliar soluções](solucoes/framework-avaliacao.md): critérios comparativos propostos, sem decisão tecnológica. `REQUIRES_REVIEW`
 
+## Conceitos e referências teóricas
+
+- [Open Knowledge Format (OKF) — fundamentos, estrutura e semântica](referencias/okf-open-knowledge-format.md): especificação, metadados, proveniência e limites do formato. `REQUIRES_REVIEW`
+- [Conceitos fundamentais para a confiança e evolução do conhecimento](referencias/conceitos-fundamentais-confianca-conhecimento.md): proveniência, verificação, validade temporal, histórico, versionamento, rastreabilidade e auditabilidade; correspondências ao glossário e à ontologia. `REQUIRES_REVIEW`
+
+**Relação com a wiki do Homelab:** esta `_wiki/` pública é a referência de trabalho e compartilhamento dos estudos conceituais do ASPONE. A wiki operacional privada do Homelab mantém cópias de consulta e registros de experimentos e implantação, não versões automaticamente sincronizadas nem autoridade sobre as definições deste projeto. Em divergências conceituais futuras, consultar primeiro esta wiki e registrar o conflito antes de corrigir qualquer cópia. O repositório de glossário e ontologia da FGV Projetos é fonte institucional externa a harmonizar, sem dependência estrutural.
+
 ## Trajetória
 
+- [20/11/2026 — Referências teóricas e fronteira entre wikis](../history/2026-11-20-referencias-aspone-e-homelab.md): publicação de artigos e distinção entre wiki pública e wiki privada. `HUMAN_VALIDATED` para a orientação de localização; conteúdo técnico `REQUIRES_REVIEW`.
 - [20/11/2026 — Inicialização da memória](../history/2026-11-20-inicializacao-memoria.md): autorização, escolhas, preservação de documentos e pendências. `HUMAN_VALIDATED` para a autorização; análises `REQUIRES_REVIEW`.
 
 ## Convenções
