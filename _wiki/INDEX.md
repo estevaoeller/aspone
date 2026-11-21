@@ -30,6 +30,14 @@ A documentação de produto e engenharia continua em `docs/`; estas páginas sã
 
 **Relação com a wiki do Homelab:** esta `_wiki/` pública é a referência de trabalho e compartilhamento dos estudos conceituais do ASPONE. A wiki operacional privada do Homelab mantém cópias de consulta e registros de experimentos e implantação, não versões automaticamente sincronizadas nem autoridade sobre as definições deste projeto. Em divergências conceituais futuras, consultar primeiro esta wiki e registrar o conflito antes de corrigir qualquer cópia. O repositório de glossário e ontologia da FGV Projetos é fonte institucional externa a harmonizar, sem dependência estrutural.
 
+## Camada de Conhecimento e Verdade dos Projetos — discussão iniciada em 20/11/2026
+
+- **[Definição e três camadas do ASPONE](../docs/conhecimento/camada-conhecimento-verdade.md)** — artigo canônico de produto: armazenar, recuperar e manter conhecimento; ingestão, conhecimento e consumo. `REQUIRES_REVIEW`
+- [Fonte, afirmação, evidência e validação](conceitos/fonte-afirmacao-conhecimento.md) — o que um registro permite afirmar e o que exige confirmação. `REQUIRES_REVIEW`
+- [Gestão do conhecimento durante o ciclo do projeto](conceitos/gestao-conhecimento-ciclo-vida.md) — memória cotidiana, pós-projeto e relação conceitual com Knowledge Advisor. `REQUIRES_REVIEW`
+- [W3C PROV](referencias/w3c-prov.md) — padrão de proveniência, suas relações e limites, com referências oficiais. `REQUIRES_REVIEW`
+- [Histórico bitemporal](referencias/historico-bitemporal.md) — validade e tempo do registro, com referências de Fowler, SQL:2011, IBM e Snodgrass. `REQUIRES_REVIEW`
+
 ## Trajetória
 
 - [20/11/2026 — Referências teóricas e fronteira entre wikis](../history/2026-11-20-referencias-aspone-e-homelab.md): publicação de artigos e distinção entre wiki pública e wiki privada. `HUMAN_VALIDATED` para a orientação de localização; conteúdo técnico `REQUIRES_REVIEW`.
