@@ -40,6 +40,7 @@ A documentação de produto e engenharia continua em `docs/`; estas páginas sã
 
 ## Trajetória
 
+- [20/11/2026 — Camada de Conhecimento e Verdade](../history/2026-11-20-camada-conhecimento-verdade.md): definição inicial, artigos ligados, referências W3C PROV e bitemporal. Orientação documental `HUMAN_VALIDATED`; textos `REQUIRES_REVIEW`.
 - [20/11/2026 — Referências teóricas e fronteira entre wikis](../history/2026-11-20-referencias-aspone-e-homelab.md): publicação de artigos e distinção entre wiki pública e wiki privada. `HUMAN_VALIDATED` para a orientação de localização; conteúdo técnico `REQUIRES_REVIEW`.
 - [20/11/2026 — Inicialização da memória](../history/2026-11-20-inicializacao-memoria.md): autorização, escolhas, preservação de documentos e pendências. `HUMAN_VALIDATED` para a autorização; análises `REQUIRES_REVIEW`.
 
