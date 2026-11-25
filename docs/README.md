@@ -37,3 +37,11 @@ Esta árvore é a fonte versionada de documentação de produto, arquitetura e e
 
 - [README](../README.md)
 - [Arquitetura](arquitetura.md)
+
+## Identidade e camada estruturada (25/11/2026)
+
+- [Identidade persistente e cadastro compartilhado](contexto/identidade-e-cadastro.md): entidades, IDs, aliases e deduplicação.
+- [Dados anotados e proveniência](conhecimento/anotacoes-e-proveniencia.md): afirmações, evidências, revisão e temporalidade.
+- [Implementação incremental](conhecimento/implementacao-camada-estruturada.md): código, IA, curadoria e piloto.
+
+Todos os três documentos permanecem `REQUIRES_REVIEW`.

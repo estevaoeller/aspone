@@ -50,3 +50,7 @@ Avaliar se o objetivo é atendido por agenda de equipe compartilhada, por uma vi
 - [Alimentação](../alimentacao/README.md)
 - [Conhecimento](../conhecimento/README.md)
 - [Backlog](../backlog.md)
+
+## Aprofundamento de identidade (25/11/2026)
+
+[Identidade persistente e cadastro compartilhado](identidade-e-cadastro.md): proposta de IDs, aliases, vínculos, cadastro candidato e resolução de duplicidades (`REQUIRES_REVIEW`).

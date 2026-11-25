@@ -1,6 +1,6 @@
 # Pendências de continuidade — memória de desenvolvimento
 
-Atualizado em **20/11/2026**. Este arquivo **não substitui** o backlog de produto e engenharia em [docs/backlog.md](docs/backlog.md), que contém IDs estáveis e critérios de conclusão.
+Atualizado em **25/11/2026**. Este arquivo **não substitui** o backlog de produto e engenharia em [docs/backlog.md](docs/backlog.md), que contém IDs estáveis e critérios de conclusão.
 
 ## Memória do projeto
 
@@ -17,3 +17,7 @@ Atualizado em **20/11/2026**. Este arquivo **não substitui** o backlog de produ
 ## Marcas
 
 `AI_PROPOSED`, `REQUIRES_REVIEW`, `HUMAN_VALIDATED`, `REJECTED`, `SUPERSEDED`.
+
+## Continuidade de 25/11/2026
+
+- [ ] `REQUIRES_REVIEW` Revisar [identidade e cadastro](docs/contexto/identidade-e-cadastro.md), [anotações](docs/conhecimento/anotacoes-e-proveniencia.md) e [implementação incremental](docs/conhecimento/implementacao-camada-estruturada.md); escolher padrão de ID e validar cenário sintético antes de implementação. Relacionar ao backlog canônico, sem duplicar tarefas de engenharia.

@@ -47,3 +47,12 @@ A documentação de produto e engenharia continua em `docs/`; estas páginas sã
 ## Convenções
 
 Marcar o que é proposto pela IA como `AI_PROPOSED` / `REQUIRES_REVIEW`. Somente decisão humana justifica `HUMAN_VALIDATED`. Atualizar páginas existentes em vez de criar duplicatas. A revisão de um entendimento deve manter referência ao registro anterior e ao motivo da mudança.
+
+## Identidade e dados anotados (25/11/2026)
+
+- [Identidade e cadastro compartilhado](../docs/contexto/identidade-e-cadastro.md)
+- [Anotações e proveniência](../docs/conhecimento/anotacoes-e-proveniencia.md)
+- [Implementação incremental](../docs/conhecimento/implementacao-camada-estruturada.md)
+- [Registro histórico](../history/2026-11-25-identidade-e-dados-anotados.md)
+
+Documentos canônicos de concepção, `REQUIRES_REVIEW`.

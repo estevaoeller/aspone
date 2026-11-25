@@ -1,6 +1,6 @@
 # Situação atual
 
-Atualizado em **20/11/2026**. Este registro descreve o repositório consultado nesta data; não substitui verificação de ambiente operacional.
+Atualizado em **25/11/2026**. Este registro descreve o repositório consultado nesta data; não substitui verificação de ambiente operacional.
 
 ## 20/11/2026 — Project Memory inicializada
 
@@ -30,3 +30,9 @@ Atualizado em **20/11/2026**. Este registro descreve o repositório consultado n
 ## Blocos encerrados
 
 - Nenhum bloco movido para o histórico ainda.
+
+## 25/11/2026: identidade e dados anotados
+
+- Consolidação documental da proposta de camada estruturada: [identidade](docs/contexto/identidade-e-cadastro.md), [anotações](docs/conhecimento/anotacoes-e-proveniencia.md) e [implementação incremental](docs/conhecimento/implementacao-camada-estruturada.md).
+- Requisito: identificadores escaláveis, estáveis e reutilizáveis. ULID e UUIDv7 ainda em avaliação; nenhuma implementação ou cadastro real publicado.
+- Próximo passo: revisar contratos lógicos e definir piloto sintético, vinculado ao backlog existente. [Histórico](history/2026-11-25-identidade-e-dados-anotados.md).

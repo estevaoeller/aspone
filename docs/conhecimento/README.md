@@ -71,3 +71,11 @@ As definições transversais de [proveniência, verificação, validade temporal
 - [Contexto compartilhado](../contexto/README.md)
 - [Alimentação](../alimentacao/README.md)
 - [Backlog](../backlog.md)
+
+## Aprofundamento da camada estruturada (25/11/2026)
+
+- [Identidade e cadastro](../contexto/identidade-e-cadastro.md)
+- [Anotações e proveniência](anotacoes-e-proveniencia.md)
+- [Implementação incremental](implementacao-camada-estruturada.md)
+
+Propostas `REQUIRES_REVIEW`, sem escolha física ou implantação.
